@@ -4,6 +4,10 @@ public class Jugador {
 	private String nombre;
 	private Ficha colorFichas;
 	
+	public Jugador(String nombre, Ficha colorFichas)   {
+		setColorFichas(colorFichas);
+		setNombre(nombre);
+	}
 	public String getNombre() {
 		return nombre;
 	}
