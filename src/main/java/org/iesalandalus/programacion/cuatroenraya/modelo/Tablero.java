@@ -15,7 +15,31 @@ public class Tablero {
 			}
 		}
 	}
-
+	private boolean columnaVacia(int columna)
+	{
+		boolean resultado = true;
+		for (int i=0; i<FILAS; i++)
+		{
+			if (casillas[i][columna].estaOcupada())
+			{
+				resultado = false;
+			}
+		}
+		return resultado;
+	}
+	public boolean estaVacio()
+	{
+	boolean resultado = true;
+	for (int i=0; i<COLUMNAS; i++)
+	{
+		if (!columnaVacia(i))
+		{
+			i = COLUMNAS;
+			resultado = false;
+		}
+	}
+	return resultado;
+	}
 
 
 }
