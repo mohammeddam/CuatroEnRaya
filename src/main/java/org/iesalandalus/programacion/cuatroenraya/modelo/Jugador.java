@@ -31,5 +31,9 @@ public class Jugador {
 		
 		this.colorFichas = colorFichas;
 	}
+	@Override
+	public String toString() {
+		return nombre + " (" + colorFichas + ")";
+	}
 	
 }
